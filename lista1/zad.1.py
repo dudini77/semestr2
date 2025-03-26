@@ -25,7 +25,7 @@ class Vector:
     def iloczyn_skalarny(self,other):
         if self.wymiar != other.wymiar:
             raise ValueError("Wektory muszą być tych samych wymiarów")
-        return Vector([a * b for a, b in zip(self.elementy, other.elementy)])
+        return sum([a * b for a, b in zip(self.elementy, other.elementy)])
     def __str__(self):
         return f"Jest to wektor o współrzędnych({', '.join(map(str,self.elementy))})"
     def suma_elementów(self):
@@ -39,7 +39,7 @@ class Vector:
 
 
         
-vector1=Vector([2,10,2],3)
+vector1=Vector([2,10,2,5],3)
 #print(5*vector1)
 #vector1.losowy_wektor(100,-10)
 #print(vector1.elementy)
@@ -48,12 +48,13 @@ vector2=Vector([1,2,3])
 #print(vector2)
 #v3 = vector4 * vector2
 #print(vector1)
-#print(vector1.iloczyn_skalarny(vector2))
+print(vector1.iloczyn_skalarny(vector2))
 #print(v3.elementy)
 #print(vector2.suma_elementów())
 #print(vector1.vector_dlugosc())
-print(vector1[2])
-print(10 in vector1)
+#print(vector1[2])
+#print(10 in vector1)
+print(vector1)
 
 
 
