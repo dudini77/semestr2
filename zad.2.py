@@ -18,4 +18,4 @@ def generator_miniatur(input, output, size):
         obraz.thumbnail(size)
         obraz.save(output, "JPEG")
         obraz.show()
-generator_miniatur (r"C:\Users\mdude\Desktop\krowa.jpg", r"C:\Users\mdude\Desktop\mini_krowa.jpg", (100, 100))
+generator_miniatur (r"C:\Users\mdude\Desktop\krowa.png", r"C:\Users\mdude\Desktop\mini_krowa.jpg", (100, 100))
